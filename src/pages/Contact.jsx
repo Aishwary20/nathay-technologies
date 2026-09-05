@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 
 import Navbar from "../components/Navbar";
 import "./Contact.css";
@@ -21,12 +20,50 @@ function Contact() {
     }));
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const handleSubmit = async (e) => {
+  e.preventDefault();
 
-    // Backend will be connected here later
-    console.log("Contact Form:", formData);
-  };
+  try {
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify({
+  access_key: import.meta.env.VITE_WEB3FORMS_KEY,
+
+  subject: "New Contact Message - Nathay Technologies",
+
+  name: formData.name,
+  email: formData.email,
+  phone: formData.phone,
+  message: formData.message,
+
+  from_name: "Nathay Technologies",
+  replyto: formData.email,
+}),
+    });
+
+    const result = await response.json();
+
+    if (result.success) {
+      alert("Message sent successfully! We will contact you soon.");
+
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        message: "",
+      });
+    } else {
+      alert("Something went wrong. Please try again.");
+    }
+  } catch (error) {
+    console.error("Contact Form Error:", error);
+    alert("Unable to send message. Please try again.");
+  }
+};
 
   return (
     <div className="contact-page">

@@ -11,6 +11,9 @@ function Contact() {
     message: "",
   });
 
+const [showSuccess, setShowSuccess] = useState(false);
+const [isSending, setIsSending] = useState(false);
+
   const handleChange = (e) => {
     const { name, value } = e.target;
 
@@ -23,6 +26,8 @@ function Contact() {
   const handleSubmit = async (e) => {
   e.preventDefault();
 
+  setIsSending(true);
+
   try {
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
@@ -31,37 +36,39 @@ function Contact() {
         Accept: "application/json",
       },
       body: JSON.stringify({
-  access_key: import.meta.env.VITE_WEB3FORMS_KEY,
+        access_key: import.meta.env.VITE_WEB3FORMS_KEY,
 
-  subject: "New Contact Message - Nathay Technologies",
+        subject: "New Contact Message - Nathay Technologies",
 
-  name: formData.name,
-  email: formData.email,
-  phone: formData.phone,
-  message: formData.message,
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        message: formData.message,
 
-  from_name: "Nathay Technologies",
-  replyto: formData.email,
-}),
+        from_name: "Nathay Technologies",
+        replyto: formData.email,
+      }),
     });
 
     const result = await response.json();
 
     if (result.success) {
-      alert("Message sent successfully! We will contact you soon.");
-
       setFormData({
         name: "",
         email: "",
         phone: "",
         message: "",
       });
+
+      setShowSuccess(true);
     } else {
       alert("Something went wrong. Please try again.");
     }
   } catch (error) {
     console.error("Contact Form Error:", error);
     alert("Unable to send message. Please try again.");
+  } finally {
+    setIsSending(false);
   }
 };
 
@@ -325,12 +332,16 @@ function Contact() {
 
 
               <button
-                type="submit"
-                className="contact-submit"
-              >
-                <span>Send Message</span>
-                <strong>↗</strong>
-              </button>
+  type="submit"
+  className="contact-submit"
+  disabled={isSending}
+>
+  <span>
+    {isSending ? "Sending..." : "Send Message"}
+  </span>
+
+  <strong>↗</strong>
+</button>
 
             </form>
 
@@ -398,6 +409,29 @@ function Contact() {
           </div>
 
         </section>
+
+        <section className="contact-final">
+
+  <div className="contact-final-circle"></div>
+
+  <div className="contact-final-content">
+
+    <span>READY WHEN YOU ARE</span>
+
+    <h2>
+      Have an idea?
+      <br />
+      <em>Let's make it real.</em>
+    </h2>
+
+    <a href="mailto:nathaytechnologies@gmail.com">
+      Email Nathay
+      <strong>↗</strong>
+    </a>
+
+  </div>
+
+</section>
 
       </main>
 

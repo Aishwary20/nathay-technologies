@@ -1,0 +1,1900 @@
+/* =========================================================
+   ABOUT PAGE
+========================================================= */
+
+.aboutus-page {
+  width: 100%;
+  overflow: hidden;
+  background: #f7f6f9;
+  color: #17131f;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.aboutus-hero {
+  position: relative;
+  min-height: 88vh;
+  display: flex;
+  align-items: center;
+
+  padding: 150px 8% 80px;
+
+  background:
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(124, 58, 237, 0.28),
+      transparent 32%
+    ),
+    #100b18;
+
+  color: white;
+  overflow: hidden;
+}
+
+
+/* Purple glow */
+
+.aboutus-hero-glow {
+  position: absolute;
+
+  width: 520px;
+  height: 520px;
+
+  right: -160px;
+  bottom: -200px;
+
+  background: rgba(124, 58, 237, 0.35);
+
+  filter: blur(100px);
+
+  border-radius: 50%;
+}
+
+
+/* Grid */
+
+.aboutus-hero-grid {
+  position: absolute;
+  inset: 0;
+
+  opacity: 0.08;
+
+  background-image:
+    linear-gradient(
+      rgba(255,255,255,0.35) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(255,255,255,0.35) 1px,
+      transparent 1px
+    );
+
+  background-size: 70px 70px;
+}
+
+
+/* Hero content */
+
+.aboutus-hero-content {
+  position: relative;
+  z-index: 2;
+
+  max-width: 850px;
+}
+
+
+.aboutus-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  margin-bottom: 28px;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  letter-spacing: 2px;
+
+  color: #c4a7ff;
+}
+
+
+.aboutus-eyebrow-line {
+  width: 38px;
+  height: 1px;
+
+  background: #a855f7;
+}
+
+
+.aboutus-hero h1 {
+  margin: 0;
+
+  font-size: clamp(64px, 8vw, 125px);
+
+  line-height: 0.91;
+
+  font-weight: 500;
+
+  letter-spacing: -5px;
+}
+
+
+.aboutus-hero h1 span {
+  color: #b47cff;
+}
+
+
+.aboutus-hero-content p {
+  max-width: 570px;
+
+  margin-top: 40px;
+
+  font-size: 17px;
+  line-height: 1.8;
+
+  color: #c5bdce;
+}
+
+
+/* Hero bottom */
+
+.aboutus-hero-bottom {
+  position: absolute;
+
+  left: 8%;
+  right: 8%;
+  bottom: 35px;
+
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  font-size: 11px;
+  letter-spacing: 2px;
+
+  color: #aaa0b3;
+}
+
+
+.aboutus-bottom-line {
+  width: 55px;
+  height: 1px;
+
+  background: #8b5cf6;
+}
+
+
+/* =========================================================
+   WHO WE ARE
+========================================================= */
+
+.aboutus-who {
+  padding: 120px 8% 110px;
+
+  background: #f7f6f9;
+}
+
+
+/* top */
+
+.aboutus-who-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 90px;
+}
+
+
+.aboutus-section-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  color: #756b7e;
+}
+
+
+.aboutus-section-label span {
+  width: 30px;
+  height: 1px;
+
+  background: #7c3aed;
+}
+
+
+.aboutus-section-number {
+  font-size: 12px;
+  letter-spacing: 2px;
+
+  color: #a39aa9;
+}
+
+
+/* Main */
+
+.aboutus-who-main {
+  display: grid;
+
+  grid-template-columns: 0.9fr 1.1fr;
+
+  gap: 100px;
+
+  max-width: 1250px;
+}
+
+
+.aboutus-who-heading p {
+  margin: 0 0 22px;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  color: #817689;
+}
+
+
+.aboutus-who-heading h2 {
+  margin: 0;
+
+  font-size: clamp(52px, 6vw, 90px);
+
+  line-height: 0.95;
+
+  font-weight: 500;
+
+  letter-spacing: -4px;
+}
+
+
+.aboutus-who-heading h2 span {
+  color: #7c3aed;
+}
+
+
+/* Right */
+
+.aboutus-who-content {
+  padding-top: 5px;
+
+  max-width: 620px;
+}
+
+
+.aboutus-who-content p {
+  margin: 0 0 24px;
+
+  font-size: 16px;
+
+  line-height: 1.85;
+
+  color: #625a68;
+}
+
+
+.aboutus-who-content .who-intro {
+  font-size: 21px;
+
+  line-height: 1.55;
+
+  color: #28212f;
+}
+
+
+/* =========================================================
+   INTERNSHIP BUTTON
+========================================================= */
+
+.internship-explore-btn {
+  width: 100%;
+
+  margin-top: 28px;
+
+  padding: 18px 20px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 18px;
+
+  border: 1px solid #ded8e4;
+
+  border-radius: 4px;
+
+  background: white;
+
+  cursor: pointer;
+
+  text-align: left;
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+.internship-explore-btn:hover {
+  transform: translateY(-4px);
+
+  border-color: #9b6cf6;
+
+  box-shadow:
+    0 15px 40px rgba(80, 45, 120, 0.12);
+}
+
+
+.internship-btn-icon {
+  width: 44px;
+  height: 44px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #eee7ff;
+
+  color: #7c3aed;
+
+  font-size: 20px;
+}
+
+
+.internship-btn-text {
+  display: flex;
+  flex-direction: column;
+
+  gap: 4px;
+
+  flex: 1;
+}
+
+
+.internship-btn-text small {
+  font-size: 9px;
+  font-weight: 700;
+
+  letter-spacing: 1.8px;
+
+  color: #948b9c;
+}
+
+
+.internship-btn-text strong {
+  font-size: 16px;
+  font-weight: 600;
+
+  color: #241d2c;
+}
+
+
+.internship-btn-arrow {
+  font-size: 22px;
+
+  color: #7c3aed;
+
+  transition: transform 0.3s ease;
+}
+
+
+.internship-explore-btn:hover .internship-btn-arrow {
+  transform: translate(3px, -3px);
+}
+
+
+/* =========================================================
+   INTERNSHIP PANEL
+========================================================= */
+
+.internship-panel {
+  max-height: 0;
+
+  overflow: hidden;
+
+  opacity: 0;
+
+  margin-top: 0;
+
+  background: #120d19;
+
+  color: white;
+
+  border-radius: 6px;
+
+  transition:
+    max-height 0.8s ease,
+    opacity 0.5s ease,
+    margin-top 0.5s ease;
+}
+
+
+.internship-panel.show {
+  max-height: 5000px;
+
+  opacity: 1;
+
+  margin-top: 70px;
+}
+
+
+/* Header */
+
+.internship-panel-header {
+  display: flex;
+
+  justify-content: space-between;
+
+  padding: 70px 70px 55px;
+
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+
+.internship-label {
+  display: block;
+
+  margin-bottom: 18px;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  color: #b794ff;
+}
+
+
+.internship-panel-header h2 {
+  margin: 0;
+
+  font-size: clamp(42px, 5vw, 70px);
+
+  line-height: 0.98;
+
+  font-weight: 500;
+
+  letter-spacing: -3px;
+}
+
+
+.internship-panel-header h2 span {
+  color: #a875ff;
+}
+
+
+.internship-panel-header p {
+  max-width: 580px;
+
+  margin: 25px 0 0;
+
+  font-size: 15px;
+
+  line-height: 1.8;
+
+  color: #aaa1b4;
+}
+
+
+.internship-close {
+  width: 46px;
+  height: 46px;
+
+  flex-shrink: 0;
+
+  border: 1px solid rgba(255,255,255,0.18);
+
+  background: transparent;
+
+  color: white;
+
+  font-size: 27px;
+
+  cursor: pointer;
+
+  border-radius: 50%;
+
+  transition: 0.3s ease;
+}
+
+
+.internship-close:hover {
+  background: white;
+
+  color: #120d19;
+
+  transform: rotate(90deg);
+}
+
+
+/* =========================================================
+   INTERNSHIP STATS
+========================================================= */
+
+.internship-stats {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+
+.internship-stat {
+  padding: 38px 35px;
+
+  border-right: 1px solid rgba(255,255,255,0.1);
+}
+
+
+.internship-stat:last-child {
+  border-right: none;
+}
+
+
+.internship-stat > span {
+  display: block;
+
+  margin-bottom: 22px;
+
+  font-size: 10px;
+
+  color: #8063b5;
+
+  letter-spacing: 2px;
+}
+
+
+.internship-stat strong {
+  display: block;
+
+  margin-bottom: 10px;
+
+  font-size: 17px;
+
+  font-weight: 600;
+}
+
+
+.internship-stat p {
+  margin: 0;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+
+  color: #93899d;
+}
+
+
+/* =========================================================
+   INTERNSHIP DOMAIN SECTION
+========================================================= */
+
+.internship-section-heading {
+  padding: 75px 70px 35px;
+}
+
+
+.internship-section-heading > span {
+  font-size: 10px;
+
+  letter-spacing: 2px;
+
+  color: #9d83c8;
+}
+
+
+.internship-section-heading h3 {
+  margin: 15px 0 0;
+
+  font-size: clamp(38px, 4vw, 58px);
+
+  line-height: 1;
+
+  font-weight: 500;
+
+  letter-spacing: -2px;
+}
+
+
+/* Domains */
+
+.internship-domains {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap: 1px;
+
+  background: rgba(255,255,255,0.1);
+
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+
+.internship-domain-card {
+  padding: 45px;
+
+  background: #120d19;
+
+  transition:
+    background 0.3s ease;
+}
+
+
+.internship-domain-card:hover {
+  background: #1b1425;
+}
+
+
+.domain-card-top {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 40px;
+}
+
+
+.domain-number {
+  font-size: 11px;
+
+  color: #8063a5;
+
+  letter-spacing: 1px;
+}
+
+
+.domain-icon {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(167,139,250,0.3);
+
+  border-radius: 50%;
+
+  color: #b794ff;
+
+  font-size: 18px;
+}
+
+
+.internship-domain-card h4 {
+  margin: 0 0 15px;
+
+  font-size: 27px;
+
+  font-weight: 500;
+
+  letter-spacing: -1px;
+}
+
+
+.internship-domain-card > p {
+  max-width: 500px;
+
+  margin: 0 0 25px;
+
+  font-size: 14px;
+
+  line-height: 1.75;
+
+  color: #93899d;
+}
+
+
+/* Tags */
+
+.domain-tags {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  margin-bottom: 30px;
+}
+
+
+.domain-tags span {
+  padding: 7px 11px;
+
+  border: 1px solid rgba(255,255,255,0.12);
+
+  border-radius: 20px;
+
+  font-size: 10px;
+
+  color: #bcb2c5;
+}
+
+
+/* Duration */
+
+.domain-duration {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding-top: 20px;
+
+  border-top: 1px solid rgba(255,255,255,0.1);
+
+  font-size: 11px;
+}
+
+
+.domain-duration span {
+  color: #77707e;
+
+  letter-spacing: 1px;
+}
+
+
+.domain-duration strong {
+  color: #d0baff;
+
+  font-weight: 500;
+}
+
+
+/* =========================================================
+   BENEFITS
+========================================================= */
+
+.internship-benefits {
+  display: grid;
+
+  grid-template-columns: 0.8fr 1.2fr;
+
+  gap: 80px;
+
+  padding: 85px 70px;
+
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+
+.benefits-heading > span {
+  font-size: 10px;
+
+  letter-spacing: 2px;
+
+  color: #9d83c8;
+}
+
+
+.benefits-heading h3 {
+  margin: 18px 0 0;
+
+  font-size: clamp(36px, 4vw, 55px);
+
+  line-height: 1;
+
+  font-weight: 500;
+
+  letter-spacing: -2px;
+}
+
+
+/* Benefit list */
+
+.benefits-list {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap: 1px;
+
+  background: rgba(255,255,255,0.1);
+}
+
+
+.benefit-item {
+  padding: 27px;
+
+  background: #120d19;
+
+  display: flex;
+
+  gap: 18px;
+}
+
+
+.benefit-item > span {
+  font-size: 10px;
+
+  color: #8063a5;
+
+  padding-top: 3px;
+}
+
+
+.benefit-item h4 {
+  margin: 0 0 8px;
+
+  font-size: 15px;
+
+  font-weight: 600;
+}
+
+
+.benefit-item p {
+  margin: 0;
+
+  font-size: 12px;
+
+  line-height: 1.6;
+
+  color: #8f8598;
+}
+
+
+/* =========================================================
+   INTERNSHIP FINAL CTA
+========================================================= */
+
+.internship-final-cta {
+  margin: 0 70px 70px;
+
+  padding: 40px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 30px;
+
+  border: 1px solid rgba(167,139,250,0.25);
+
+  background:
+    linear-gradient(
+      110deg,
+      rgba(124,58,237,0.16),
+      transparent
+    );
+}
+
+
+.internship-final-cta span {
+  font-size: 9px;
+
+  letter-spacing: 2px;
+
+  color: #a88bd0;
+}
+
+
+.internship-final-cta h3 {
+  margin: 10px 0 0;
+
+  font-size: 32px;
+
+  line-height: 1.1;
+
+  font-weight: 500;
+}
+
+
+.internship-final-cta h3 em {
+  color: #b794ff;
+
+  font-style: normal;
+}
+
+
+.internship-apply-btn {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 20px;
+
+  padding: 15px 20px;
+
+  background: white;
+
+  color: #17131f;
+
+  text-decoration: none;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  transition: 0.3s ease;
+}
+
+
+.internship-apply-btn span {
+  color: #7c3aed;
+
+  font-size: 18px;
+}
+
+
+.internship-apply-btn:hover {
+  transform: translateY(-3px);
+
+  padding-right: 24px;
+}
+
+
+/* =========================================================
+   WHO VISUAL
+========================================================= */
+
+.aboutus-who-visual {
+  position: relative;
+
+  height: 360px;
+
+  margin-top: 100px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding: 60px;
+
+  background: #17111f;
+
+  color: white;
+
+  overflow: hidden;
+}
+
+
+.who-visual-number {
+  font-size: 260px;
+
+  line-height: 1;
+
+  font-weight: 700;
+
+  color: rgba(255,255,255,0.04);
+}
+
+
+.who-visual-content {
+  position: relative;
+
+  z-index: 2;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 15px;
+
+  text-align: right;
+}
+
+
+.who-visual-content span {
+  font-size: 13px;
+
+  letter-spacing: 4px;
+
+  color: #c7b1e9;
+}
+
+
+.who-visual-corner {
+  position: absolute;
+
+  width: 120px;
+  height: 120px;
+
+  border: 1px solid rgba(167,139,250,0.3);
+}
+
+
+.corner-one {
+  top: 30px;
+  right: 30px;
+
+  border-left: none;
+  border-bottom: none;
+}
+
+
+.corner-two {
+  bottom: 30px;
+  left: 30px;
+
+  border-right: none;
+  border-top: none;
+}
+
+
+/* =========================================================
+   PILLARS
+========================================================= */
+
+.who-pillars {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 0;
+
+  margin-top: 1px;
+}
+
+
+.who-pillar {
+  display: flex;
+
+  gap: 25px;
+
+  padding: 40px 35px;
+
+  border-right: 1px solid #ddd7e2;
+
+  background: white;
+}
+
+
+.who-pillar:last-child {
+  border-right: none;
+}
+
+
+.who-pillar > span {
+  font-size: 10px;
+
+  color: #9d91a5;
+
+  padding-top: 4px;
+}
+
+
+.who-pillar h3 {
+  margin: 0 0 8px;
+
+  font-size: 25px;
+
+  font-weight: 500;
+}
+
+
+.who-pillar p {
+  margin: 0;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+
+  color: #766d7b;
+}
+
+
+/* =========================================================
+   BELIEF
+========================================================= */
+
+.aboutus-belief {
+  min-height: 620px;
+
+  padding: 100px 8%;
+
+  display: grid;
+
+  grid-template-columns: 0.25fr 1fr;
+
+  align-items: center;
+
+  background: #110c18;
+
+  color: white;
+}
+
+
+.belief-number {
+  align-self: start;
+
+  font-size: 12px;
+
+  letter-spacing: 2px;
+
+  color: #75677f;
+}
+
+
+.belief-content > span {
+  font-size: 11px;
+
+  letter-spacing: 2px;
+
+  color: #a98bd1;
+}
+
+
+.belief-content h2 {
+  margin: 30px 0 0;
+
+  font-size: clamp(55px, 7vw, 105px);
+
+  line-height: 0.95;
+
+  font-weight: 500;
+
+  letter-spacing: -5px;
+}
+
+
+.belief-content em {
+  color: #a875ff;
+
+  font-style: normal;
+}
+
+
+/* =========================================================
+   MISSION
+========================================================= */
+
+.aboutus-mission {
+  padding: 120px 8%;
+
+  background: #f7f6f9;
+}
+
+
+.mission-heading {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: flex-end;
+
+  gap: 50px;
+
+  margin-bottom: 80px;
+}
+
+
+.mission-heading h2 {
+  margin: 0;
+
+  font-size: clamp(50px, 6vw, 85px);
+
+  line-height: 0.95;
+
+  font-weight: 500;
+
+  letter-spacing: -4px;
+}
+
+
+.mission-heading h2 span {
+  color: #7c3aed;
+}
+
+
+.mission-cards {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap: 1px;
+
+  background: #dcd6e1;
+}
+
+
+.mission-card {
+  padding: 55px;
+
+  background: white;
+}
+
+
+.mission-card > span {
+  font-size: 10px;
+
+  letter-spacing: 2px;
+
+  color: #8b7d98;
+}
+
+
+.mission-card h3 {
+  max-width: 550px;
+
+  margin: 35px 0 20px;
+
+  font-size: 34px;
+
+  line-height: 1.15;
+
+  font-weight: 500;
+
+  letter-spacing: -1px;
+}
+
+
+.mission-card p {
+  max-width: 550px;
+
+  margin: 0;
+
+  font-size: 15px;
+
+  line-height: 1.8;
+
+  color: #716978;
+}
+
+
+/* =========================================================
+   APPROACH
+========================================================= */
+
+.aboutus-approach {
+  padding: 120px 8%;
+
+  background: #eeebf1;
+}
+
+
+.approach-top {
+  display: flex;
+
+  justify-content: space-between;
+
+  margin-bottom: 80px;
+}
+
+
+.approach-top > span {
+  font-size: 11px;
+
+  color: #968d9e;
+}
+
+
+.approach-heading h2 {
+  margin: 0 0 100px;
+
+  font-size: clamp(60px, 8vw, 120px);
+
+  line-height: 0.85;
+
+  font-weight: 500;
+
+  letter-spacing: -6px;
+}
+
+
+.approach-heading h2 span {
+  color: #7c3aed;
+}
+
+
+.approach-list {
+  max-width: 900px;
+
+  margin-left: auto;
+}
+
+
+.approach-item {
+  display: grid;
+
+  grid-template-columns: 80px 1fr;
+
+  gap: 30px;
+
+  padding: 35px 0;
+
+  border-top: 1px solid #d2cbd7;
+}
+
+
+.approach-item:last-child {
+  border-bottom: 1px solid #d2cbd7;
+}
+
+
+.approach-item > span {
+  font-size: 11px;
+
+  color: #8d8295;
+}
+
+
+.approach-item h3 {
+  margin: 0 0 10px;
+
+  font-size: 25px;
+
+  font-weight: 500;
+}
+
+
+.approach-item p {
+  max-width: 600px;
+
+  margin: 0;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+
+  color: #716877;
+}
+
+
+/* =========================================================
+   FINAL CTA
+========================================================= */
+
+.aboutus-cta {
+  min-height: 560px;
+
+  display: flex;
+
+  align-items: center;
+
+  padding: 100px 8%;
+
+  background:
+    radial-gradient(
+      circle at 75% 50%,
+      rgba(124,58,237,0.35),
+      transparent 35%
+    ),
+    #110c18;
+
+  color: white;
+}
+
+
+.aboutus-cta-content > span {
+  font-size: 10px;
+
+  letter-spacing: 2px;
+
+  color: #9f8aaf;
+}
+
+
+.aboutus-cta h2 {
+  margin: 25px 0 45px;
+
+  font-size: clamp(55px, 7vw, 105px);
+
+  line-height: 0.9;
+
+  font-weight: 500;
+
+  letter-spacing: -5px;
+}
+
+
+.aboutus-cta h2 span {
+  color: #a875ff;
+}
+
+
+.aboutus-cta a {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 30px;
+
+  padding-bottom: 12px;
+
+  border-bottom: 1px solid #8061a8;
+
+  color: white;
+
+  text-decoration: none;
+
+  font-size: 14px;
+}
+
+
+.aboutus-cta a strong {
+  color: #b794ff;
+
+  font-size: 20px;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+  .aboutus-hero {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+
+
+  .aboutus-who,
+  .aboutus-mission,
+  .aboutus-approach {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+
+
+  .aboutus-who-main {
+    gap: 50px;
+  }
+
+
+  .internship-panel-header {
+    padding: 55px 45px;
+  }
+
+
+  .internship-section-heading {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+
+  .internship-domain-card {
+    padding: 35px;
+  }
+
+
+  .internship-benefits {
+    padding: 65px 45px;
+
+    gap: 45px;
+  }
+
+
+  .internship-final-cta {
+    margin-left: 45px;
+    margin-right: 45px;
+  }
+
+
+  .aboutus-who-visual {
+    padding: 45px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+  .aboutus-hero {
+    min-height: 82vh;
+
+    padding:
+      130px
+      6%
+      75px;
+  }
+
+
+  .aboutus-hero h1 {
+    font-size: clamp(55px, 16vw, 85px);
+
+    letter-spacing: -4px;
+  }
+
+
+  .aboutus-hero-content p {
+    font-size: 14px;
+
+    margin-top: 30px;
+  }
+
+
+  .aboutus-hero-bottom {
+    left: 6%;
+    right: 6%;
+  }
+
+
+  .aboutus-who {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+
+  .aboutus-who-top {
+    margin-bottom: 55px;
+  }
+
+
+  .aboutus-who-main {
+    grid-template-columns: 1fr;
+
+    gap: 45px;
+  }
+
+
+  .aboutus-who-heading h2 {
+    font-size: 58px;
+
+    letter-spacing: -3px;
+  }
+
+
+  .aboutus-who-content .who-intro {
+    font-size: 18px;
+  }
+
+
+  /* Internship */
+
+  .internship-panel.show {
+    margin-top: 45px;
+  }
+
+
+  .internship-panel-header {
+    padding: 40px 25px;
+
+    flex-direction: column;
+
+    gap: 30px;
+  }
+
+
+  .internship-panel-header h2 {
+    font-size: 44px;
+  }
+
+
+  .internship-close {
+    align-self: flex-end;
+
+    order: -1;
+  }
+
+
+  .internship-stats {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+
+  .internship-stat {
+    padding: 25px 20px;
+
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+
+
+  .internship-stat:nth-child(2) {
+    border-right: none;
+  }
+
+
+  .internship-stat:nth-child(3) {
+    border-bottom: none;
+  }
+
+
+  .internship-stat:nth-child(4) {
+    border-right: none;
+
+    border-bottom: none;
+  }
+
+
+  .internship-section-heading {
+    padding:
+      55px
+      25px
+      30px;
+  }
+
+
+  .internship-domains {
+    grid-template-columns: 1fr;
+  }
+
+
+  .internship-domain-card {
+    padding: 30px 25px;
+  }
+
+
+  .internship-domain-card h4 {
+    font-size: 24px;
+  }
+
+
+  .internship-benefits {
+    grid-template-columns: 1fr;
+
+    padding:
+      60px
+      25px;
+
+    gap: 45px;
+  }
+
+
+  .benefits-list {
+    grid-template-columns: 1fr;
+  }
+
+
+  .internship-final-cta {
+    margin:
+      0
+      25px
+      40px;
+
+    padding: 30px 25px;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+
+  .internship-final-cta h3 {
+    font-size: 27px;
+  }
+
+
+  /* Visual */
+
+  .aboutus-who-visual {
+    height: 260px;
+
+    margin-top: 70px;
+
+    padding: 30px;
+  }
+
+
+  .who-visual-number {
+    font-size: 180px;
+  }
+
+
+  .who-visual-content span {
+    font-size: 9px;
+
+    letter-spacing: 2px;
+  }
+
+
+  .who-pillars {
+    grid-template-columns: 1fr;
+  }
+
+
+  .who-pillar {
+    border-right: none;
+
+    border-bottom: 1px solid #ddd7e2;
+  }
+
+
+  .who-pillar:last-child {
+    border-bottom: none;
+  }
+
+
+  /* Belief */
+
+  .aboutus-belief {
+    min-height: 500px;
+
+    padding:
+      80px
+      6%;
+
+    grid-template-columns: 1fr;
+
+    gap: 50px;
+  }
+
+
+  .belief-content h2 {
+    font-size: 57px;
+
+    letter-spacing: -3px;
+  }
+
+
+  /* Mission */
+
+  .aboutus-mission {
+    padding:
+      80px
+      6%;
+  }
+
+
+  .mission-heading {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    margin-bottom: 55px;
+  }
+
+
+  .mission-heading h2 {
+    font-size: 58px;
+
+    letter-spacing: -3px;
+  }
+
+
+  .mission-cards {
+    grid-template-columns: 1fr;
+  }
+
+
+  .mission-card {
+    padding: 35px 25px;
+  }
+
+
+  .mission-card h3 {
+    font-size: 27px;
+  }
+
+
+  /* Approach */
+
+  .aboutus-approach {
+    padding:
+      80px
+      6%;
+  }
+
+
+  .approach-top {
+    margin-bottom: 55px;
+  }
+
+
+  .approach-heading h2 {
+    font-size: 65px;
+
+    letter-spacing: -4px;
+
+    margin-bottom: 65px;
+  }
+
+
+  .approach-item {
+    grid-template-columns: 45px 1fr;
+
+    gap: 15px;
+  }
+
+
+  /* CTA */
+
+  .aboutus-cta {
+    min-height: 480px;
+
+    padding:
+      80px
+      6%;
+  }
+
+
+  .aboutus-cta h2 {
+    font-size: 60px;
+
+    letter-spacing: -3px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+  .aboutus-hero h1 {
+    font-size: 53px;
+  }
+
+
+  .aboutus-who-heading h2 {
+    font-size: 52px;
+  }
+
+
+  .internship-btn-text strong {
+    font-size: 14px;
+  }
+
+
+  .internship-btn-icon {
+    width: 38px;
+    height: 38px;
+  }
+
+
+  .internship-panel-header h2 {
+    font-size: 38px;
+  }
+
+
+  .internship-stat strong {
+    font-size: 14px;
+  }
+
+
+  .internship-stat p {
+    font-size: 11px;
+  }
+
+
+  .benefits-heading h3 {
+    font-size: 42px;
+  }
+
+
+  .belief-content h2 {
+    font-size: 48px;
+  }
+
+
+  .mission-heading h2 {
+    font-size: 48px;
+  }
+
+
+  .approach-heading h2 {
+    font-size: 53px;
+  }
+
+
+  .aboutus-cta h2 {
+    font-size: 50px;
+  }
+
+}

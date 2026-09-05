@@ -1,0 +1,440 @@
+/* =====================================================
+   NATHAY TECHNOLOGIES
+   CONTACT PREVIEW
+===================================================== */
+
+.contact-preview {
+  position: relative;
+
+  min-height: 650px;
+
+  padding: 120px 0 70px;
+
+  overflow: hidden;
+
+  color: #ffffff;
+
+  background:
+    linear-gradient(
+      135deg,
+      #08070d 0%,
+      #120c21 50%,
+      #08070d 100%
+    );
+}
+
+
+/* =====================================================
+   PURPLE GLOW
+===================================================== */
+
+.contact-glow {
+  position: absolute;
+
+  width: 650px;
+  height: 650px;
+
+  top: -280px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(109, 74, 255, 0.22),
+      rgba(109, 74, 255, 0.07) 40%,
+      transparent 70%
+    );
+
+  filter: blur(10px);
+
+  pointer-events: none;
+}
+
+
+/* =====================================================
+   CONTAINER
+===================================================== */
+
+.contact-container {
+  position: relative;
+
+  z-index: 2;
+
+  width: min(
+    1280px,
+    calc(100% - 80px)
+  );
+
+  margin: 0 auto;
+}
+
+
+/* =====================================================
+   TOP
+===================================================== */
+
+.contact-top {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding-bottom: 30px;
+
+  border-bottom:
+    1px solid rgba(255, 255, 255, 0.10);
+}
+
+
+.contact-label {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  color: #a78bfa;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+}
+
+
+.contact-line {
+  width: 35px;
+
+  height: 1px;
+
+  background: #e21b16;
+}
+
+
+.contact-number {
+  color: rgba(255, 255, 255, 0.35);
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  letter-spacing: 2px;
+}
+
+
+/* =====================================================
+   MAIN
+===================================================== */
+
+.contact-main {
+  min-height: 400px;
+
+  padding: 90px 0;
+
+  display: grid;
+
+  grid-template-columns:
+    1.15fr
+    0.85fr;
+
+  gap: 100px;
+
+  align-items: center;
+}
+
+
+/* =====================================================
+   HEADING
+===================================================== */
+
+.contact-heading p {
+  margin: 0 0 22px;
+
+  color: rgba(255, 255, 255, 0.40);
+
+  font-size: 13px;
+
+  letter-spacing: 1px;
+}
+
+
+.contact-heading h2 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size:
+    clamp(
+      65px,
+      8vw,
+      112px
+    );
+
+  line-height: 0.90;
+
+  font-weight: 600;
+
+  letter-spacing: -6px;
+}
+
+
+.contact-heading h2 span {
+  color: #8b5cf6;
+}
+
+
+/* =====================================================
+   CONTENT
+===================================================== */
+
+.contact-content {
+  max-width: 500px;
+}
+
+
+.contact-content p {
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.55);
+
+  font-size: 15px;
+
+  line-height: 1.8;
+}
+
+
+/* =====================================================
+   BUTTON
+===================================================== */
+
+.contact-button {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  margin-top: 32px;
+
+  padding: 17px 22px;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  border-radius: 7px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #6d4aff,
+      #8b5cf6
+    );
+
+  box-shadow:
+    0 12px 35px rgba(109, 74, 255, 0.20);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+.contact-button span {
+  font-size: 17px;
+
+  transition:
+    transform 0.3s ease;
+}
+
+
+.contact-button:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 18px 45px rgba(109, 74, 255, 0.30);
+}
+
+
+.contact-button:hover span {
+  transform:
+    translate(4px, -4px);
+}
+
+
+/* =====================================================
+   BOTTOM
+===================================================== */
+
+.contact-bottom {
+  display: grid;
+
+  grid-template-columns:
+    1fr
+    1fr;
+
+  border-top:
+    1px solid rgba(255, 255, 255, 0.10);
+}
+
+
+.contact-item {
+  padding: 28px 0;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 9px;
+}
+
+
+.contact-item + .contact-item {
+  padding-left: 45px;
+
+  border-left:
+    1px solid rgba(255, 255, 255, 0.10);
+}
+
+
+.contact-item > span {
+  color: rgba(255, 255, 255, 0.32);
+
+  font-size: 10px;
+
+  text-transform: uppercase;
+
+  letter-spacing: 2px;
+}
+
+
+.contact-item a {
+  color: rgba(255, 255, 255, 0.82);
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  transition:
+    color 0.3s ease;
+}
+
+
+.contact-item a:hover {
+  color: #a78bfa;
+}
+
+
+.contact-item strong {
+  margin-left: 8px;
+
+  font-size: 16px;
+
+  font-weight: 400;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 900px) {
+
+  .contact-container {
+    width: calc(100% - 50px);
+  }
+
+  .contact-main {
+    gap: 50px;
+  }
+
+  .contact-heading h2 {
+    font-size: 72px;
+
+    letter-spacing: -4px;
+  }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 700px) {
+
+  .contact-preview {
+    min-height: auto;
+
+    padding: 90px 0 50px;
+  }
+
+  .contact-container {
+    width: calc(100% - 35px);
+  }
+
+  .contact-main {
+    min-height: auto;
+
+    padding: 70px 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 45px;
+  }
+
+  .contact-heading h2 {
+    font-size:
+      clamp(
+        52px,
+        15vw,
+        72px
+      );
+
+    letter-spacing: -4px;
+  }
+
+  .contact-content {
+    max-width: 100%;
+  }
+
+  .contact-content p {
+    font-size: 14px;
+
+    line-height: 1.7;
+  }
+
+  .contact-button {
+    width: 100%;
+
+    justify-content: center;
+  }
+
+  .contact-bottom {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-item {
+    padding: 22px 0;
+  }
+
+  .contact-item + .contact-item {
+    padding-left: 0;
+
+    border-left: none;
+
+    border-top:
+      1px solid rgba(255, 255, 255, 0.10);
+  }
+}

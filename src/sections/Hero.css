@@ -1,0 +1,757 @@
+/* =====================================================
+   NATHAY TECHNOLOGIES
+   PREMIUM HERO
+===================================================== */
+
+.hero {
+  position: relative;
+
+  width: 100%;
+  min-height: 100vh;
+
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+
+  background: #08080d;
+}
+
+
+/* =====================================================
+   BACKGROUND VIDEO
+===================================================== */
+
+.hero-video {
+  position: absolute;
+
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transform: scale(1.02);
+}
+
+
+/* =====================================================
+   CINEMATIC OVERLAY
+===================================================== */
+
+.hero-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(5, 5, 10, 0.94) 0%,
+      rgba(8, 6, 17, 0.78) 35%,
+      rgba(13, 8, 25, 0.48) 68%,
+      rgba(8, 5, 15, 0.68) 100%
+    );
+
+  z-index: 1;
+}
+
+
+/* =====================================================
+   PURPLE AMBIENT GLOW
+===================================================== */
+
+.hero-glow {
+  position: absolute;
+
+  top: 15%;
+  right: 5%;
+
+  width: 550px;
+  height: 550px;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(109, 74, 255, 0.20) 0%,
+      rgba(109, 74, 255, 0.08) 35%,
+      transparent 70%
+    );
+
+  filter: blur(20px);
+
+  pointer-events: none;
+
+  z-index: 2;
+}
+
+
+/* =====================================================
+   MAIN CONTAINER
+===================================================== */
+
+.hero-container {
+  position: relative;
+
+  z-index: 3;
+
+  width: min(
+    1280px,
+    calc(100% - 80px)
+  );
+
+  margin: 0 auto;
+
+  padding-top: 100px;
+}
+
+
+/* =====================================================
+   CONTENT
+===================================================== */
+
+.hero-content {
+  max-width: 950px;
+  transform: translateX(-80px);
+}
+
+
+/* =====================================================
+   EYEBROW
+===================================================== */
+
+.hero-eyebrow {
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  margin-bottom: 30px;
+
+  color: rgba(255, 255, 255, 0.65);
+
+  font-size: 11px;
+
+  font-weight: 600;
+
+  letter-spacing: 4px;
+}
+
+
+.eyebrow-line {
+  width: 38px;
+  height: 1px;
+
+  background: #e21b16;
+}
+
+
+/* =====================================================
+   HEADING
+===================================================== */
+
+.hero-heading-wrapper {
+  animation:
+    heroTextIn 0.8s ease both;
+}
+
+
+.hero-heading-wrapper h1 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size:
+    clamp(
+      58px,
+      8vw,
+      118px
+    );
+
+  line-height: 0.94;
+
+  font-weight: 700;
+
+  letter-spacing: -5px;
+}
+
+
+.hero-heading-wrapper h1 span {
+  color: transparent;
+
+  background:
+    linear-gradient(
+      100deg,
+      #ffffff 0%,
+      #c4b5fd 55%,
+      #8b5cf6 100%
+    );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+
+/* =====================================================
+   DESCRIPTION
+===================================================== */
+
+.hero-description {
+  max-width: 620px;
+
+  margin-top: 30px;
+
+  color: rgba(255, 255, 255, 0.68);
+
+  font-size: 16px;
+
+  line-height: 1.75;
+
+  font-weight: 400;
+}
+
+
+/* =====================================================
+   BUTTONS
+===================================================== */
+
+.hero-actions {
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  margin-top: 38px;
+}
+
+
+.hero-primary-btn,
+.hero-secondary-btn {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease,
+    border-color 0.3s ease;
+}
+
+
+/* Primary */
+
+.hero-primary-btn {
+  gap: 12px;
+
+  min-width: 170px;
+
+  height: 52px;
+
+  padding: 0 22px;
+
+  color: #ffffff;
+
+  background:
+    linear-gradient(
+      135deg,
+      #6d4aff,
+      #8b5cf6
+    );
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  border-radius: 8px;
+
+  box-shadow:
+    0 10px 30px rgba(109, 74, 255, 0.22);
+}
+
+
+.hero-primary-btn span {
+  font-size: 17px;
+
+  transition: transform 0.3s ease;
+}
+
+
+.hero-primary-btn:hover {
+  transform: translateY(-3px);
+
+  background:
+    linear-gradient(
+      135deg,
+      #7c5cff,
+      #9b7bff
+    );
+}
+
+
+.hero-primary-btn:hover span {
+  transform: translate(3px, -3px);
+}
+
+
+/* Secondary */
+
+.hero-secondary-btn {
+  min-width: 165px;
+
+  height: 52px;
+
+  padding: 0 22px;
+
+  color: rgba(255, 255, 255, 0.85);
+
+  background:
+    rgba(255, 255, 255, 0.04);
+
+  border:
+    1px solid rgba(255, 255, 255, 0.18);
+
+  border-radius: 8px;
+
+  backdrop-filter: blur(10px);
+}
+
+
+.hero-secondary-btn:hover {
+  transform: translateY(-3px);
+
+  color: #ffffff;
+
+  background:
+    rgba(255, 255, 255, 0.08);
+
+  border-color:
+    rgba(167, 139, 250, 0.55);
+}
+
+
+/* =====================================================
+   BOTTOM AREA
+===================================================== */
+
+.hero-bottom {
+  position: absolute;
+
+  left: 0;
+  bottom: 35px;
+
+  z-index: 4;
+
+  width: 100%;
+
+  padding: 0 40px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+
+/* =====================================================
+   SCROLL INDICATOR
+===================================================== */
+
+.hero-scroll {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  color: rgba(255, 255, 255, 0.55);
+
+  text-decoration: none;
+
+  font-size: 10px;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+
+  transition: color 0.3s ease;
+}
+
+
+.hero-scroll:hover {
+  color: #ffffff;
+}
+
+
+.scroll-circle {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 30px;
+  height: 30px;
+
+  border:
+    1px solid rgba(255, 255, 255, 0.25);
+
+  border-radius: 50%;
+
+  font-size: 13px;
+
+  animation:
+    scrollBounce 2s infinite;
+}
+
+
+/* =====================================================
+   COUNTER
+===================================================== */
+
+.hero-counter {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  color: rgba(255, 255, 255, 0.45);
+
+  font-size: 11px;
+
+  letter-spacing: 2px;
+}
+
+
+.counter-current {
+  color: #ffffff;
+
+  font-weight: 600;
+}
+
+
+.counter-line {
+  width: 55px;
+  height: 1px;
+
+  background:
+    rgba(255, 255, 255, 0.25);
+}
+
+
+/* =====================================================
+   PROGRESS
+===================================================== */
+
+.hero-progress {
+  position: absolute;
+
+  right: 40px;
+  bottom: 82px;
+
+  z-index: 4;
+
+  display: flex;
+
+  gap: 5px;
+}
+
+
+.progress-item {
+  width: 30px;
+  height: 2px;
+
+  padding: 0;
+
+  border: none;
+
+  background:
+    rgba(255, 255, 255, 0.20);
+
+  cursor: pointer;
+
+  overflow: hidden;
+}
+
+
+.progress-item span {
+  display: block;
+
+  width: 0;
+  height: 100%;
+
+  background: #a78bfa;
+
+  transition: width 0.4s ease;
+}
+
+
+.progress-item.active span {
+  width: 100%;
+}
+
+
+/* =====================================================
+   ANIMATIONS
+===================================================== */
+
+@keyframes heroTextIn {
+
+  from {
+    opacity: 0;
+
+    transform:
+      translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform:
+      translateY(0);
+  }
+}
+
+
+@keyframes scrollBounce {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(5px);
+  }
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 900px) {
+
+  .hero-container {
+    width: calc(100% - 50px);
+  }
+
+  .hero-heading-wrapper h1 {
+    font-size:
+      clamp(
+        52px,
+        9vw,
+        82px
+      );
+  }
+
+  .hero-glow {
+    right: -150px;
+  }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 700px) {
+
+  .hero {
+    min-height: 100svh;
+  }
+
+  .hero-video {
+    object-position: center;
+  }
+
+  .hero-overlay {
+    background:
+      linear-gradient(
+        180deg,
+        rgba(5, 5, 10, 0.78) 0%,
+        rgba(7, 5, 15, 0.70) 45%,
+        rgba(7, 5, 15, 0.92) 100%
+      );
+  }
+
+  .hero-container {
+    width: calc(100% - 35px);
+
+    padding-top: 90px;
+  }
+
+  .hero-eyebrow {
+    margin-bottom: 22px;
+
+    font-size: 9px;
+
+    letter-spacing: 3px;
+  }
+
+  .eyebrow-line {
+    width: 25px;
+  }
+
+  .hero-heading-wrapper h1 {
+    font-size:
+      clamp(
+        46px,
+        13vw,
+        68px
+      );
+
+    letter-spacing: -3px;
+
+    line-height: 0.98;
+  }
+
+  .hero-description {
+    max-width: 100%;
+
+    margin-top: 24px;
+
+    font-size: 14px;
+
+    line-height: 1.65;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+
+    align-items: stretch;
+
+    margin-top: 30px;
+
+    gap: 10px;
+  }
+
+  .hero-primary-btn,
+  .hero-secondary-btn {
+    width: 100%;
+  }
+
+  .hero-bottom {
+    bottom: 20px;
+
+    padding: 0 18px;
+  }
+
+  .hero-scroll span:last-child {
+    display: none;
+  }
+
+  .hero-counter {
+    display: none;
+  }
+
+  .hero-progress {
+    right: 18px;
+
+    bottom: 72px;
+  }
+
+  .hero-glow {
+    width: 350px;
+    height: 350px;
+
+    top: 20%;
+    right: -180px;
+  }
+}
+
+
+/* =====================================================
+   VERY SMALL MOBILE
+===================================================== */
+
+@media (max-width: 400px) {
+
+  .hero-heading-wrapper h1 {
+    font-size: 43px;
+  }
+
+  .hero-description {
+    font-size: 13px;
+  }
+}
+
+/* =====================================================
+   FORCE HERO BUTTONS TO BE CLICKABLE
+===================================================== */
+
+.hero-container {
+  position: relative;
+  z-index: 20;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 21;
+}
+
+.hero-actions {
+  position: relative;
+  z-index: 30;
+  pointer-events: auto;
+}
+
+.hero-primary-btn,
+.hero-secondary-btn {
+  position: relative;
+  z-index: 31;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.hero-primary-btn *,
+.hero-secondary-btn * {
+  pointer-events: none;
+}
+
+/* =====================================================
+   HERO CLICK FIX
+===================================================== */
+
+.hero-video,
+.hero-overlay,
+.hero-glow {
+  pointer-events: none !important;
+}
+
+.hero-container {
+  position: relative;
+  z-index: 50 !important;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 51 !important;
+}
+
+.hero-actions {
+  position: relative;
+  z-index: 100 !important;
+  pointer-events: auto !important;
+}
+
+.hero-primary-btn,
+.hero-secondary-btn {
+  position: relative;
+  z-index: 101 !important;
+  pointer-events: auto !important;
+  cursor: pointer;
+}
+
+.hero-primary-btn span,
+.hero-secondary-btn span {
+  pointer-events: none;
+}

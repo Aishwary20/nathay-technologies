@@ -1,0 +1,518 @@
+/* =====================================================
+   NATHAY TECHNOLOGIES
+   FUTURE TALENT / INTERNSHIP PREVIEW
+===================================================== */
+
+.future-talent {
+  position: relative;
+
+  min-height: 760px;
+
+  padding: 130px 0 110px;
+
+  overflow: hidden;
+
+  color: #0a0910;
+
+  background:
+    radial-gradient(
+      circle at 85% 20%,
+      rgba(109, 74, 255, 0.10),
+      transparent 30%
+    ),
+    #f8f7fb;
+}
+
+
+/* =====================================================
+   CONTAINER
+===================================================== */
+
+.talent-container {
+  position: relative;
+
+  z-index: 2;
+
+  width: min(
+    1280px,
+    calc(100% - 80px)
+  );
+
+  margin: 0 auto;
+}
+
+
+/* =====================================================
+   TOP
+===================================================== */
+
+.talent-top {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding-bottom: 30px;
+
+  border-bottom:
+    1px solid rgba(10, 9, 16, 0.12);
+}
+
+
+.talent-label {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  color: #6d4aff;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+}
+
+
+.talent-line {
+  width: 35px;
+
+  height: 1px;
+
+  background: #e21b16;
+}
+
+
+.talent-number {
+  color: rgba(10, 9, 16, 0.35);
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  letter-spacing: 2px;
+}
+
+
+/* =====================================================
+   MAIN
+===================================================== */
+
+.talent-main {
+  min-height: 430px;
+
+  padding: 90px 0;
+
+  display: grid;
+
+  grid-template-columns:
+    1.1fr
+    0.9fr;
+
+  gap: 100px;
+
+  align-items: center;
+}
+
+
+/* =====================================================
+   HEADING
+===================================================== */
+
+.talent-heading {
+  position: relative;
+}
+
+
+.talent-eyebrow {
+  margin: 0 0 24px;
+
+  color: #77727f;
+
+  font-size: 11px;
+
+  font-weight: 600;
+
+  letter-spacing: 4px;
+}
+
+
+.talent-heading h2 {
+  margin: 0;
+
+  color: #0b0910;
+
+  font-size:
+    clamp(
+      65px,
+      8vw,
+      110px
+    );
+
+  line-height: 0.92;
+
+  font-weight: 600;
+
+  letter-spacing: -5px;
+}
+
+
+.talent-heading h2 span {
+  color: #7354e8;
+}
+
+
+/* =====================================================
+   CONTENT
+===================================================== */
+
+.talent-content {
+  max-width: 520px;
+}
+
+
+.talent-content p {
+  margin: 0 0 22px;
+
+  color: #68636f;
+
+  font-size: 15px;
+
+  line-height: 1.8;
+}
+
+
+/* =====================================================
+   BUTTON
+===================================================== */
+
+.talent-button {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-top: 15px;
+
+  padding: 15px 20px;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  border:
+    1px solid rgba(109, 74, 255, 0.35);
+
+  border-radius: 7px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #6d4aff,
+      #8b5cf6
+    );
+
+  box-shadow:
+    0 10px 25px rgba(109, 74, 255, 0.15);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background 0.3s ease;
+}
+
+
+.talent-button span {
+  font-size: 17px;
+
+  transition:
+    transform 0.3s ease;
+}
+
+
+.talent-button:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 15px 35px rgba(109, 74, 255, 0.25);
+
+  background:
+    linear-gradient(
+      135deg,
+      #7958ff,
+      #9879ff
+    );
+}
+
+
+.talent-button:hover span {
+  transform:
+    translate(3px, -3px);
+}
+
+
+/* =====================================================
+   BOTTOM FEATURES
+===================================================== */
+
+.talent-bottom {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  border-top:
+    1px solid rgba(10, 9, 16, 0.12);
+}
+
+
+.talent-feature {
+  min-height: 130px;
+
+  padding: 30px 35px;
+
+  display: grid;
+
+  grid-template-columns:
+    35px
+    1fr;
+
+  gap: 20px;
+
+  align-items: start;
+
+  border-right:
+    1px solid rgba(10, 9, 16, 0.10);
+
+  transition:
+    background 0.3s ease;
+}
+
+
+.talent-feature:last-child {
+  border-right: none;
+}
+
+
+.talent-feature:hover {
+  background: rgba(109, 74, 255, 0.04);
+}
+
+
+.talent-feature > span {
+  color: #6d4aff;
+
+  font-size: 11px;
+
+  font-weight: 700;
+}
+
+
+.talent-feature strong {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #111015;
+
+  font-size: 15px;
+
+  font-weight: 600;
+}
+
+
+.talent-feature p {
+  margin: 0;
+
+  color: #77727d;
+
+  font-size: 12px;
+
+  line-height: 1.5;
+}
+
+
+/* =====================================================
+   DECORATIVE ORBS
+===================================================== */
+
+.talent-orb {
+  position: absolute;
+
+  border-radius: 50%;
+
+  pointer-events: none;
+}
+
+
+.talent-orb-one {
+  width: 450px;
+
+  height: 450px;
+
+  top: 50px;
+
+  right: -180px;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(124, 92, 252, 0.10),
+      transparent 68%
+    );
+
+  filter: blur(10px);
+}
+
+
+.talent-orb-two {
+  width: 300px;
+
+  height: 300px;
+
+  bottom: -160px;
+
+  left: -120px;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(226, 27, 22, 0.05),
+      transparent 70%
+    );
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 900px) {
+
+  .talent-container {
+    width: calc(100% - 50px);
+  }
+
+
+  .talent-main {
+    grid-template-columns:
+      1fr
+      0.8fr;
+
+    gap: 50px;
+  }
+
+
+  .talent-heading h2 {
+    font-size: 70px;
+
+    letter-spacing: -3px;
+  }
+
+
+  .talent-content p {
+    font-size: 14px;
+  }
+
+
+  .talent-feature {
+    padding: 25px 20px;
+  }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 700px) {
+
+  .future-talent {
+    min-height: auto;
+
+    padding: 90px 0 70px;
+  }
+
+
+  .talent-container {
+    width: calc(100% - 35px);
+  }
+
+
+  .talent-main {
+    min-height: auto;
+
+    padding: 70px 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 45px;
+
+    align-items: flex-start;
+  }
+
+
+  .talent-heading h2 {
+    font-size:
+      clamp(
+        50px,
+        14vw,
+        70px
+      );
+
+    letter-spacing: -3px;
+  }
+
+
+  .talent-content {
+    max-width: 100%;
+  }
+
+
+  .talent-content p {
+    font-size: 14px;
+
+    line-height: 1.7;
+  }
+
+
+  .talent-bottom {
+    grid-template-columns: 1fr;
+  }
+
+
+  .talent-feature {
+    min-height: auto;
+
+    padding: 25px 0;
+
+    border-right: none;
+
+    border-bottom:
+      1px solid rgba(10, 9, 16, 0.10);
+  }
+
+
+  .talent-feature:last-child {
+    border-bottom: none;
+  }
+
+
+  .talent-orb-one {
+    width: 300px;
+
+    height: 300px;
+
+    right: -170px;
+  }
+}

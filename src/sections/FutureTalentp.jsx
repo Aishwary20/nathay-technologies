@@ -60,12 +60,12 @@ function FutureTalentp() {
             </p>
 
             <a
-              href="/internships"
-              className="talent-button"
-            >
-              Explore Internships
-              <span>↗</span>
-            </a>
+  href="/about#internships"
+  className="talent-button"
+>
+  Explore Internships
+  <span>↗</span>
+</a>
 
           </div>
 

@@ -1,10 +1,27 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
 
 import "./Aboutus.css";
 
 function Aboutus() {
   const [showInternships, setShowInternships] = useState(false);
+
+  useEffect(() => {
+  if (window.location.hash === "#internships") {
+    setShowInternships(true);
+
+    setTimeout(() => {
+      const section = document.getElementById("internships");
+
+      if (section) {
+        section.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
+    }, 300);
+  }
+}, []);
 
   return (
     <div className="aboutus-page">
@@ -168,10 +185,11 @@ function Aboutus() {
           ===================================================== */}
 
           <div
-            className={`internship-panel ${
-              showInternships ? "show" : ""
-            }`}
-          >
+  id="internships"
+  className={`internship-panel ${
+    showInternships ? "show" : ""
+  }`}
+>
 
             {/* PANEL HEADER */}
 
